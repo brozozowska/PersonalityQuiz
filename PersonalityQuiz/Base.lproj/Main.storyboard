@@ -247,6 +247,21 @@
                     </view>
                     <navigationItem key="navigationItem" id="JhH-80-TUy"/>
                     <connections>
+                        <outlet property="multiLabel1" destination="8O1-Px-Hli" id="PrI-hi-CQC"/>
+                        <outlet property="multiLabel2" destination="Zdq-DR-Xx4" id="R3h-o2-9TO"/>
+                        <outlet property="multiLabel3" destination="rOs-4Y-8Ga" id="3dp-Ha-Rpm"/>
+                        <outlet property="multiLabel4" destination="xtR-Wi-3ya" id="MaF-TO-Taa"/>
+                        <outlet property="multipleStackView" destination="lOf-hw-KNO" id="Joe-BN-LDb"/>
+                        <outlet property="questionLabel" destination="xqX-a4-9Lc" id="tft-0K-bpe"/>
+                        <outlet property="questionProgressView" destination="dY6-QO-f2v" id="1L9-XP-TaF"/>
+                        <outlet property="rangedLabel1" destination="3QE-ni-R7t" id="oCg-lG-2NJ"/>
+                        <outlet property="rangedLabel2" destination="heb-0I-4LO" id="kIt-4E-C2e"/>
+                        <outlet property="rangedStackView" destination="re2-ft-d11" id="zcK-eY-5fC"/>
+                        <outlet property="singleButton1" destination="Pq2-Rd-LT0" id="2aH-Ul-7ca"/>
+                        <outlet property="singleButton2" destination="CYk-Du-m1Q" id="SoR-da-Z7N"/>
+                        <outlet property="singleButton3" destination="9Va-oH-Hsd" id="hfZ-x4-g9f"/>
+                        <outlet property="singleButton4" destination="ztR-MJ-eeg" id="dwr-Ti-k7k"/>
+                        <outlet property="singleStackView" destination="BQX-iR-kKs" id="96L-sQ-kBD"/>
                         <segue destination="veF-LU-jjc" kind="show" identifier="Result" id="Yft-aV-WNC"/>
                     </connections>
                 </viewController>
