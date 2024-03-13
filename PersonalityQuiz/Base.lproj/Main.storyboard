@@ -101,21 +101,33 @@
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="KOz-bP-kLZ" eventType="touchUpInside" id="Gwz-Z1-hQZ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYk-Du-m1Q">
                                         <rect key="frame" x="0.0" y="54.333333333333371" width="353" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="KOz-bP-kLZ" eventType="touchUpInside" id="61d-dl-oQe"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Va-oH-Hsd">
                                         <rect key="frame" x="0.0" y="108.66666666666669" width="353" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="KOz-bP-kLZ" eventType="touchUpInside" id="N2w-hu-gJG"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztR-MJ-eeg">
                                         <rect key="frame" x="0.0" y="163" width="353" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="KOz-bP-kLZ" eventType="touchUpInside" id="mvp-za-Wea"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -182,6 +194,9 @@
                                         <rect key="frame" x="0.0" y="204" width="353" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="multipleAnswerButtonPressed" destination="KOz-bP-kLZ" eventType="touchUpInside" id="J9O-GX-dvh"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -212,6 +227,9 @@
                                         <rect key="frame" x="0.0" y="90.333333333333314" width="353" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="rangedAnswerButtonPressed" destination="KOz-bP-kLZ" eventType="touchUpInside" id="ohS-a4-Gaa"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -251,28 +269,33 @@
                         <outlet property="multiLabel2" destination="Zdq-DR-Xx4" id="R3h-o2-9TO"/>
                         <outlet property="multiLabel3" destination="rOs-4Y-8Ga" id="3dp-Ha-Rpm"/>
                         <outlet property="multiLabel4" destination="xtR-Wi-3ya" id="MaF-TO-Taa"/>
+                        <outlet property="multiSwitch1" destination="Bda-y4-XvA" id="ozt-t5-JGJ"/>
+                        <outlet property="multiSwitch2" destination="q4F-0B-peF" id="HSU-du-o7S"/>
+                        <outlet property="multiSwitch3" destination="wWq-XY-0Jx" id="tDZ-Yd-dX4"/>
+                        <outlet property="multiSwitch4" destination="dRY-vW-Zwx" id="gP6-U1-6t3"/>
                         <outlet property="multipleStackView" destination="lOf-hw-KNO" id="Joe-BN-LDb"/>
                         <outlet property="questionLabel" destination="xqX-a4-9Lc" id="tft-0K-bpe"/>
                         <outlet property="questionProgressView" destination="dY6-QO-f2v" id="1L9-XP-TaF"/>
                         <outlet property="rangedLabel1" destination="3QE-ni-R7t" id="oCg-lG-2NJ"/>
                         <outlet property="rangedLabel2" destination="heb-0I-4LO" id="kIt-4E-C2e"/>
+                        <outlet property="rangedSlider" destination="k1o-8n-ZXk" id="P9d-5o-mrY"/>
                         <outlet property="rangedStackView" destination="re2-ft-d11" id="zcK-eY-5fC"/>
                         <outlet property="singleButton1" destination="Pq2-Rd-LT0" id="2aH-Ul-7ca"/>
                         <outlet property="singleButton2" destination="CYk-Du-m1Q" id="SoR-da-Z7N"/>
                         <outlet property="singleButton3" destination="9Va-oH-Hsd" id="hfZ-x4-g9f"/>
                         <outlet property="singleButton4" destination="ztR-MJ-eeg" id="dwr-Ti-k7k"/>
                         <outlet property="singleStackView" destination="BQX-iR-kKs" id="96L-sQ-kBD"/>
-                        <segue destination="veF-LU-jjc" kind="show" identifier="Result" id="Yft-aV-WNC"/>
+                        <segue destination="veF-LU-jjc" kind="show" identifier="Results" destinationCreationSelector="showResults:" id="Yft-aV-WNC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pYC-MQ-QTS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1744" y="4"/>
         </scene>
-        <!--Result-->
+        <!--Results-->
         <scene sceneID="sbU-fF-qns">
             <objects>
-                <viewController title="Result" id="veF-LU-jjc" customClass="ResultsViewController" customModule="PersonalityQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Results" id="veF-LU-jjc" customClass="ResultsViewController" customModule="PersonalityQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b6c-qo-32M">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
